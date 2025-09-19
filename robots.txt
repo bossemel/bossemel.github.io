@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://bossemel.github.io/sitemap.xml
