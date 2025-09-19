@@ -7,7 +7,6 @@ first_name: Leonie
 middle_name: 
 last_name: Bossemeyer
 contact_note: l.bossemeyer@ed.ac.uk 
-# >
   # You can even add a little note about which of these is the best way to reach you.
 description: Doctoral Researcher at University of Edinburgh 
 #> # the ">" symbol means to ignore newlines until "footer_text:"
