@@ -27,4 +27,5 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a doctoral researcher at the University of Edinburgh, focusing on machine learning and computer vision applications for human learning.
+I am a doctoral researcher at the University of Edinburgh, focusing on machine learning and computer vision applications for human learning. I am part of [Oisin Mac Aodha's](https://homepages.inf.ed.ac.uk/omacaod/) research group.
+ 
