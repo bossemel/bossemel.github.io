@@ -20,5 +20,5 @@ latest_posts:
 
 I am a doctoral researcher at the University of Edinburgh, focusing on machine learning and computer vision applications for human learning. I am part of [Oisin Mac Aodha's](https://homepages.inf.ed.ac.uk/omacaod/) research group. You can find me on [LinkedIn](https://www.linkedin.com/in/bossemel/).
 
-**Contact:** [l.bossemeyer@ed.ac.uk](mailto:l.bossemeyer@ed.ac.uk) | [Google Scholar](https://scholar.google.com/citations?user=uQFacCEAAAAJ&inst=9829354390429183113)
+Contact: [l.bossemeyer@ed.ac.uk](mailto:l.bossemeyer@ed.ac.uk) [Google Scholar](https://scholar.google.com/citations?user=uQFacCEAAAAJ&inst=9829354390429183113)
  
