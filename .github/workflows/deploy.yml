@@ -36,7 +36,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.3' # Updated to match Gemfile requirement
+          ruby-version: "3.3" # Updated to match Gemfile requirement
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 1 # Increment this number if you need to re-download cached gems
       - name: Setup Python 🐍
