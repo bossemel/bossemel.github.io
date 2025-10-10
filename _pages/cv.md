@@ -6,7 +6,7 @@ nav: true
 nav_order: 5
 ---
 
-### Education
+**Education**
 
 **PhD in Informatics** 
 University of Edinburgh, 2023-present  
@@ -25,7 +25,7 @@ Faculty of Economics, Ludwig Maximilian University of Munich, 2019-2020
 Dissertation: "Machine Learning for Causal Discovery with Applications in Economics"
 
 
-### Experience
+**Experience**
 
 **Machine Learning Engineer**  
 Pieces for Developers, 2021-2024
@@ -58,7 +58,7 @@ German Council of Economic Experts, 2018
 - Created Stata tool for simulating economic effects of fiscal rules in Eurozone
 - Conducted research on effects of globalization on voter behavior in EU
 
-### Awards & Honors
+**Awards & Honors**
 
 - **MSc Quantitative Economics Class Prize** (2021) - Munich Economists Alumni Club
 - **Outstanding Project Submission** (2019/20) - School of Informatics, University of Edinburgh
