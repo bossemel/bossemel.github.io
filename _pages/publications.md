@@ -1,9 +1,11 @@
 ---
 layout: page
 permalink: /publications/
-title: # publications
+title: publications
 nav: true
 nav_order: 2
+_styles: |
+  .post-title { display: none; }
 ---
 
 <!-- _pages/publications.md -->
