@@ -7,7 +7,7 @@ subtitle: Doctoral Researcher at University of Edinburgh
 profile:
   image: leonie_photo.png
   image_circular: true
-  align: left
+  align: right
   image_size: small
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
