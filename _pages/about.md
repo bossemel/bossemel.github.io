@@ -4,6 +4,12 @@ title: about
 permalink: /
 subtitle: Doctoral Researcher at University of Edinburgh
 
+profile:
+  image: leonie_photo.png
+  image_circular: true
+  align: left
+  image_size: small
+
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 
@@ -18,4 +24,4 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a doctoral researcher at the University of Edinburgh, focusing on machine learning and computer vision applications for human learning. I am part of [Oisin Mac Aodha's](https://homepages.inf.ed.ac.uk/omacaod/) research group. You can reach me via email to [l.bossemeyer@ed.ac.uk](mailto:l.bossemeyer@ed.ac.uk) or find me on [LinkedIn](https://www.linkedin.com/in/bossemel/). My scholar profile is [here](https://scholar.google.com/citations?user=uQFacCEAAAAJ).
+I am a doctoral researcher at the University of Edinburgh, focusing on machine learning and computer vision applications for human learning. I am part of [Oisin Mac Aodha](https://homepages.inf.ed.ac.uk/omacaod/)'s research group. You can reach me via email to [l.bossemeyer@ed.ac.uk](mailto:l.bossemeyer@ed.ac.uk) or find me on [LinkedIn](https://www.linkedin.com/in/bossemel/). My scholar profile is [here](https://scholar.google.com/citations?user=uQFacCEAAAAJ).
