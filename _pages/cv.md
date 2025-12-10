@@ -11,16 +11,15 @@ _styles: |
 **Current**
 
 **PhD in Informatics**  at University of Edinburgh, 2023-present  
-Supervisor: Oisin Mac Aodha
-Research focus: Machine learning and computer vision applications for human learning.
+Supervised by [Dr. Oisin Mac Aodha](https://homepages.inf.ed.ac.uk/omacaod), my research focus is machine learning and computer vision applications for human learning.
 
 **Experience**
 
-**Machine Learning Engineer** at Pieces, 2021-2024
-
-Designed and implemented ML software to enrich file fragments with metadata.
-Focused on NLP on source code, search & recommendation, and ML on local devices.
-Worked with C++, machine learning algorithms, and PyTorch.
+**Machine Learning Engineer** at Pieces, 2021-2024  
+Designed and implemented ML software to enrich file fragments with metadata.  
+Focused on NLP on source code, search & recommendation, and ML on local devices.  
+Worked with C++, machine learning algorithms, and PyTorch.  
+Blog posts: [How we made our optical character recognition (OCR) code more accurate](https://pieces.app/blog/how-we-made-our-optical-character-recognition-ocr-code-more-accurate) | [Exploring text segmentation in retrieval-augmented generation (RAG)](https://pieces.app/blog/text-segmentation-in-rag)
 
 <!-- **Demonstrator** in Machine Learning Practical & Applied Machine Learning, School of Informatics, University of Edinburgh, 2020, 2024 & 2025
 
@@ -39,16 +38,25 @@ German Council of Economic Experts, 2018 -->
 
 
 **MSc in Biomedical AI**  at School of Informatics, University of Edinburgh, 2023-2024  
-Dissertation: "Teaching Visual Knowledge via Interpretable Concepts"
+Dissertation: "Teaching Visual Knowledge via Interpretable Concepts"  
+Supervisors: [Dr. Oisin Mac Aodha](https://homepages.inf.ed.ac.uk/omacaod) and [Dr. Tom MacGillivray](https://edwebprofiles.ed.ac.uk/profile/dr-tom-macgillivray)  
+[Thesis](https://www.researchgate.net/publication/397472317_Teaching_Visual_Knowledge_via_Interpretable_Concepts)
 
 **MSc in Data Science** at School of Informatics, University of Edinburgh, 2019-2020  
-Dissertation: "CM Flows - Copula Density Estimation with Normalizing Flows"
+Dissertation: "CM Flows - Copula Density Estimation with Normalizing Flows"  
+Supervisor: [Dr. Arno Onken](https://homepages.inf.ed.ac.uk/aonken)  
+[Thesis](https://project-archive.inf.ed.ac.uk/msc/20204428/msc_proj.pdf) | [Code](https://github.com/bossemel/CMFlows)  
 
 **MSc in Quantitative Economics** at Faculty of Economics, Ludwig Maximilian University of Munich, 2019-2020  
 Dissertation: "Machine Learning for Causal Discovery with Applications in Economics"
+Advisor: [Prof. Dr. Helmut Farbmacher](https://www.professoren.tum.de/en/farbmacher-helmut)  
+Supervisor: [Prof. Dr. Joachim Winter](https://cepr.org/about/people/joachim-winter)  
+[Thesis](https://www.researchgate.net/publication/362174852_Machine_Learning_for_Causal_Discovery_with_Applications_in_Economics) | [Code](https://github.com/bossemel/Flow_PC)
+
 
 **BSc in Economics** at Faculty of Economics, Humboldt University Berlin, 2014-2017  
-Dissertation: "Campaign Efforts and Electoral Success - Evidence from the UK General Election"
+Dissertation: "Campaign Efforts and Electoral Success - Evidence from the UK General Election"  
+Supervisor: [Prof. Dr. Jochen Kluve](https://wol.iza.org/spokespeople/jochen-kluve)
 
 
 **Awards & Honors**
