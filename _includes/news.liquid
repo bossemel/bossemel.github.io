@@ -1,0 +1,98 @@
+<div class="news">
+  {% if site.news != blank %}
+    {% if include.show_heading %}
+      <p class="content-section-title">News</p>
+    {% endif %}
+    {% assign news_size = site.news | size %}
+    <div
+      class="table-responsive"
+      {% if include.limit and page.announcements.scrollable and news_size > 3 %}
+        style="max-height: 60vw"
+      {% endif %}
+    >
+      <table class="table table-sm table-borderless">
+        {% assign news = site.news | reverse %}
+        {% if include.limit and page.announcements.limit %}
+          {% assign news_limit = page.announcements.limit %}
+        {% else %}
+          {% assign news_limit = news_size %}
+        {% endif %}
+        {% for item in news limit: news_limit %}
+          <tr>
+            <th scope="row" class="news-date">{{ item.date | date: '%B %Y' }}</th>
+            <td class="news-content">
+              {% if item.inline %}
+                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+              {% else %}
+                <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+              {% endif %}
+            </td>
+            {% if item.image %}
+              {% assign news_img_path = item.image | prepend: 'assets/img/' %}
+              {% if item.image_zoom %}
+                {% assign news_zoom_path = item.image_zoom | prepend: 'assets/img/' %}
+              {% else %}
+                {% assign news_zoom_path = news_img_path %}
+              {% endif %}
+              {% assign news_img_base = news_img_path | remove: '.jpg' | remove: '.jpeg' | remove: '.png' | remove: '.tiff' | remove: '.gif' %}
+              {% assign news_img_ext = item.image | split: '.' | last %}
+              {% assign news_thumb_class = 'news-thumb' %}
+              {% if item.image_fit == 'contain' %}
+                {% assign news_thumb_class = news_thumb_class | append: ' news-thumb-contain' %}
+              {% endif %}
+              <td class="news-image">
+                {% if item.image_link %}
+                  <a href="{{ item.image_link | relative_url }}" target="_blank" rel="noopener noreferrer">
+                    <picture>
+                      {% if site.imagemagick.enabled %}
+                        {% if news_img_ext == 'gif' or news_img_ext == 'jpeg' or news_img_ext == 'jpg' or news_img_ext == 'png' or news_img_ext == 'tiff' %}
+                          <source
+                            class="responsive-img-srcset"
+                            srcset="{% for i in site.imagemagick.widths %}{{ news_img_base | relative_url }}-{{ i }}.webp {{ i }}w,{% endfor %}"
+                            type="image/webp"
+                            sizes="(max-width: 767px) 100vw, 170px"
+                          >
+                        {% endif %}
+                      {% endif %}
+                      <img
+                        src="{{ news_img_path | relative_url }}"
+                        alt="{{ item.image_alt | default: '' }}"
+                        class="{{ news_thumb_class }}"
+                        loading="lazy"
+                        onerror="this.onerror=null; $('.responsive-img-srcset').remove();"
+                      >
+                    </picture>
+                  </a>
+                {% else %}
+                  <picture>
+                    {% if site.imagemagick.enabled %}
+                      {% if news_img_ext == 'gif' or news_img_ext == 'jpeg' or news_img_ext == 'jpg' or news_img_ext == 'png' or news_img_ext == 'tiff' %}
+                        <source
+                          class="responsive-img-srcset"
+                          srcset="{% for i in site.imagemagick.widths %}{{ news_img_base | relative_url }}-{{ i }}.webp {{ i }}w,{% endfor %}"
+                          type="image/webp"
+                          sizes="(max-width: 767px) 100vw, 170px"
+                        >
+                      {% endif %}
+                    {% endif %}
+                    <img
+                      src="{{ news_img_path | relative_url }}"
+                      data-zoom-src="{{ news_zoom_path | absolute_url }}"
+                      alt="{{ item.image_alt | default: '' }}"
+                      class="{{ news_thumb_class }}"
+                      data-zoomable
+                      loading="lazy"
+                      onerror="this.onerror=null; $('.responsive-img-srcset').remove();"
+                    >
+                  </picture>
+                {% endif %}
+              </td>
+            {% endif %}
+          </tr>
+        {% endfor %}
+      </table>
+    </div>
+  {% else %}
+    <p>No news so far...</p>
+  {% endif %}
+</div>

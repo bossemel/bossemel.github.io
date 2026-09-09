@@ -1,0 +1,22 @@
+---
+description: Never modify user image assets — read/reference only
+alwaysApply: true
+---
+
+# Protect image assets
+
+**Never edit, overwrite, re-export, compress, resize, convert, or delete files in `assets/img/`** (or any other image/binary media in this repo).
+
+This includes:
+- Do not use Write, StrReplace, or Delete on `.jpg`, `.jpeg`, `.png`, `.gif`, `.webp`, `.pdf`, `.tiff`, or similar binary files
+- Do not run ImageMagick, `convert`, `sips`, `ffmpeg`, or other tools that write to those paths
+- Do not enable or trigger plugins/workflows that overwrite source images
+
+Allowed:
+- Reference image paths in HTML, Liquid, Markdown, CSS, or JS (display size via CSS only)
+- Point `src` / `data-zoom-src` at existing files
+- Read image metadata to answer questions
+
+If an image needs replacing or re-exporting, **ask the user to do it** and only update code references if they request it.
+
+High-quality sources for news photos: prefer `leonie_athens_hq.jpeg`, `leonie_neurips_hq.jpeg`, and user-provided originals — never substitute or regenerate them.

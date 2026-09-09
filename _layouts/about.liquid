@@ -1,0 +1,79 @@
+---
+layout: default
+---
+<div class="post about-page">
+  <article class="about-body">
+    <div class="about-intro{% if page.profile %} about-intro--has-photo{% endif %}{% if page.profile and page.profile.align == 'left' %} about-intro--photo-left{% endif %}">
+      {% if page.profile %}
+        <div class="about-hero-photo">
+          {% if page.profile.image %}
+            {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+            {% if page.profile.image_circular %}
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+            {% else %}
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+            {% endif %}
+            {% if page.profile.image_size == 'small' %}
+              {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.2}}px, (min-width: 576px) 20vw, 70vw"{% endcapture %}
+            {% else %}
+              {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
+            {% endif %}
+            {%
+              include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+              cache_bust=true
+            %}
+          {% endif %}
+          {% if page.profile.more_info %}
+            <div class="more-info">{{ page.profile.more_info }}</div>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      <header class="about-hero-main">
+        <h1 class="post-title">
+          {% if site.title == 'blank' %}
+            {{ site.first_name }} {{ site.middle_name }}
+            {{ site.last_name }}
+          {% else %}
+            {{ site.title }}
+          {% endif %}
+        </h1>
+        <p class="desc">{{ page.subtitle }}</p>
+      </header>
+
+      <div class="about-bio">{{ content }}</div>
+    </div>
+
+    {% if page.announcements and page.announcements.enabled %}
+      <section class="news-section" aria-label="News">
+        {% include news.liquid limit=true show_heading=true %}
+      </section>
+    {% endif %}
+
+    {% if page.latest_posts and page.latest_posts.enabled %}
+      <h2>
+        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+      </h2>
+      {% include latest_posts.liquid %}
+    {% endif %}
+
+    {% if page.selected_papers %}
+      <h2>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+      </h2>
+      {% include selected_papers.liquid %}
+    {% endif %}
+
+    {% if page.social %}
+      <div class="social">
+        <div class="contact-icons">{% include social.liquid %}</div>
+
+        <div class="contact-note">{{ site.contact_note }}</div>
+      </div>
+    {% endif %}
+
+    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
+      {% include newsletter.liquid center=true %}
+    {% endif %}
+  </article>
+</div>

@@ -1,0 +1,237 @@
+/******************************************************************************
+ * Mobile / small-screen adjustments
+ ******************************************************************************/
+
+@media (max-width: 767.98px) {
+  .container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .container.mt-5 {
+    margin-top: 1.75rem !important;
+  }
+
+  // About page
+  .about-page {
+    .about-intro--has-photo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--global-divider-color);
+    }
+
+    .about-hero-main,
+    .about-bio,
+    .about-hero-photo {
+      grid-area: unset;
+    }
+
+    .about-hero-photo {
+      order: -1;
+      width: auto;
+      max-width: 9rem;
+      margin: 0 auto 0.25rem;
+      justify-self: center;
+    }
+
+    .post-title {
+      font-size: 1.65rem;
+      font-weight: 500;
+      line-height: 1.2;
+      margin-bottom: 0;
+    }
+
+    .desc {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: var(--global-text-color-light);
+      max-width: 22rem;
+      margin: 0 auto;
+    }
+
+    .about-bio {
+      font-size: 1rem;
+      line-height: 1.65;
+      text-align: left;
+      width: 100%;
+    }
+
+    .news-section {
+      margin-top: 3rem;
+    }
+  }
+
+  .post-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--global-divider-color);
+
+    .profile.float-right,
+    .profile.float-left {
+      float: none;
+      order: -1;
+      margin: 0 auto 0.25rem;
+      width: auto;
+      max-width: 9rem;
+    }
+
+    .profile-small {
+      margin-top: 0 !important;
+      top: 0;
+    }
+
+    .post-title {
+      font-size: 1.65rem;
+      font-weight: 500;
+      line-height: 1.2;
+      margin-bottom: 0;
+    }
+
+    .desc {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: var(--global-text-color-light);
+      max-width: 22rem;
+      margin-bottom: 0;
+    }
+  }
+
+  article > .clearfix {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .news-section {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--global-divider-color);
+  }
+
+  .content-section-title {
+    margin-left: 0;
+  }
+
+  // News: stack table rows so text and images both show
+  .news {
+    .table-responsive {
+      overflow-x: visible;
+    }
+
+    table,
+    tbody,
+    tr,
+    td,
+    th {
+      display: block;
+      width: 100%;
+    }
+
+    tr {
+      margin-bottom: 0.75rem;
+      padding: 1rem;
+      border: 1px solid var(--global-divider-color);
+      border-radius: 8px;
+      background-color: var(--global-bg-color);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .news-date {
+      text-align: left;
+      white-space: normal;
+      padding-right: 0;
+      padding-bottom: 0.35rem;
+      font-size: 0.7rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .news-content {
+      max-width: none;
+      padding-right: 0;
+      font-size: 0.9375rem;
+    }
+
+    .news-image {
+      white-space: normal;
+      width: 100%;
+      padding-top: 0.75rem;
+      text-align: left;
+    }
+
+    picture {
+      display: block;
+      width: 100%;
+    }
+
+    .news-thumb {
+      display: block;
+      margin-left: 0;
+      margin-right: 0;
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      max-height: 14rem;
+      object-fit: cover;
+    }
+
+    .news-thumb-contain {
+      object-fit: contain;
+      max-height: 16rem;
+    }
+  }
+
+  .header-bar h1 {
+    font-size: 2.5rem;
+  }
+
+  // Publications: let action buttons wrap
+  .publications ol.bibliography li .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+
+    a.btn {
+      margin-bottom: 0.25rem;
+    }
+  }
+
+  // CV
+  p.location {
+    white-space: normal;
+  }
+
+  .date-column {
+    transform: none;
+    width: auto;
+  }
+
+  div.container-links {
+    gap: 0.35rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .about-page .about-hero-photo {
+    max-width: 7.5rem;
+  }
+
+  .post-header .profile.float-right,
+  .post-header .profile.float-left {
+    max-width: 7.5rem;
+  }
+}
